@@ -25,6 +25,7 @@ public class Project {
     private String projectName;
     private String clientName;
     private int duration_InMonth;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     @JsonDeserialize(using = LocalDateDeserializer.class)
     @JsonSerialize(using = LocalDateSerializer.class)
